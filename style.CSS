@@ -69,11 +69,7 @@
       text-align: center;
     }
 
-    .intro {
-      font-size: 1.1em;
-      margin-bottom: 30px;
-       color:#ffff;
-    }
+  
 
     /* Projetos em destaque */
     .projetos {
@@ -270,5 +266,6 @@ z-index: -1;
     }
      
  
+
 
  
