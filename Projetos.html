@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre Mim (Mario Lourenço)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #29282a;
+     background-image: url("fot1\ \(4\).jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .menu-container {
+      background-color: #2c3e50;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .menu-button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .menu-options {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+    .menu-options a {
+      display: block;
+      padding: 10px 15px;
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    .menu-options a:hover {
+      background-color: #ecf0f1;
+    }
+
+   
+
+    .logo img {
+       width: 200px;
+      height: 200px;
+      border-radius: 0.5%;
+      border: 2px solid #00070b;
+      box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+   
+
+    .logo1 img:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      line-height: 1.2;
+    }
+     .logo1 img {
+       width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #3498db;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+     .logo1 {
+      display:flex;
+      align-items: center;
+      gap: 10px;
+    }
+.logo1-text {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      line-height: 1.2;
+    }
+
+    .logo1-text h1 {
+      margin: 0;
+      font-size: 18px;
+      color: #ffffff;
+    }
+
+    .logo1-text p {
+      margin: 0;
+      font-size: 12px;
+      color: #bdc3c7;
+    }
+
+
+
+    .logo-text h1 {
+      margin: 0;
+      font-size: 18px;
+      color: #ffffff;
+    }
+
+    .logo-text p {
+      margin: 0;
+      font-size: 12px;
+      color: #bdc3c7;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: rgb(230, 227, 230);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(224, 221, 221, 0.1);
+    }
+    li {
+      color: #0f0f10;
+  
+    }
+    p{
+      color: #111111;
+    }
+    p{
+      color: #111111;
+    }
+     
+ p1 {
+      color: #dae1e6;
+    }
+    h2 {
+      color: #2980b9;
+       text-align: center;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social img {
+      width: 30px;
+      transition: transform 0.2s ease;
+    }
+
+    .social img:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 600px) {
+      .menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        margin-top: 10px;
+      }
+.logo1 {
+        margin-top: 10px;
+      }
+      .menu-options {
+        width: 90%;
+      }
+    }
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    
+    }
+
+  
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    
+    <div class="logo1">
+       <a href="Sobre_min.html">
+  <img src="lourenco1 (2)2.jpg" alt="Logo Mário Lourenço">
+</a>
+      <div class="logo1-text">
+        <h1>Mário Lourenço</h1>
+       <p>Electrical and Embedded System Engineer</p>
+      </div>
+    </div>
+    <div class="menu-options" id="menu">
+      <a href="index.html">Page d'accueil</a>
+      <a href="Sobre_min.html">À Propos de Moi</a>
+      <a href="Formação.html">Formation</a>
+     <a href="Competencia.html">Compétences</a>
+      <a href="Projetos.html">Projets Realisés</a>
+      <a href="Empresa.HTML">Entreprises</a>
+    </div>
+  </div>
+
+ 
+<div class="container"> 
+      <h2> Projetos Realizados </h2>
+      <ol>
+      <li>Gestão e Supervisão de CO2 </li>
+      <p>Entreprise:Companhia castel de bebidas de Luanda(CCBL)</p>
+      <p>Contexte du projet:</p>
+      <p> Le système développé est composé de plusieurs parties essentielles, à savoir :</p>
+      <ul>
+<li> La conception du système : incluant l’architecture de communication entre
+l’automate, les débitmètres et l’interface HMI .</li>
+<li>L’acquisition des données : à partir de capteurs de débit connectés à un
+automate Siemens S7-315 .</li>
+<li>La visualisation et la gestion des données : à travers d’un 
+panneau opérateur (IPC677D) avec des écrans dynamiques pour le suivi en temps réel, la
+configuration des paramètres et l’analyse des consommations .</li>
+<li>L’extraction des données : via un bouton intégré à l’IHM permettant
+ d’exporter les mesures dans un fichier Excel pour archivage et exploitation.</li>
+      </ul>
+
+<p>Composants principaux du projet</p>
+<ul>
+  <li>FLOWMETER OPTISWIRL 4200 C – KROHNE et Proline Promass :<div class="logo">
+      <img src="Promag_50W_51W_Front_Horiz_Displ_Komp_PG_PP_01.jpg" alt="Logo Castel Angola">
+    </div>
+    
+  </li>
+<li>Automate Siemens S7-300:
+  <div class="logo">
+      <img src="cpu.png" alt="Logo Castel Angola">
+    </div>
+</li>
+<li>IPC system :<div class="logo">
+      <img src="ipc.png" alt="Logo Castel Angola">
+    </div></li>
+</ul>
+
+<p>Logiciels Utilisés dans le projet:</p>
+<ul>
+  <li>TIA Portal V18:<div class="logo">
+      <img src="CASTEL_ANGOLA-Logo-01-808x800.png" alt="Logo Castel Angola">
+    </div> </li>
+<li>WinCC Runtime advanced:<div class="logo">
+      <img src="CASTEL_ANGOLA-Logo-01-808x800.png" alt="Logo Castel Angola">
+    </div></li>
+<li>Excel </li>
+<li>Eplan Electric</li>
+</ul>
+
+<p>Principe de Fontionnement du projet</p>
+<ol>
+ 
+ <li>Les capteurs mesurent en continu le débit instantané et le volume totalisé de CO2.</li>
+<li>Ces valeurs sont lues par l’automate S7-300 via les entrées analogiques (4–20
+mA).
+</li>
+<li> L’automate traite les données, les convertit si nécessaire, puis les envoie à
+l’IHM.</li>
+<li>L’IHM affiche ces valeurs sur des écrans conçus sous WinCC. Les opérateurs
+peuvent y :
+<ul>
+  <li>consulter les données en direct,</li>
+  <li>visualiser les historiques sous forme de courbes (Trend View)</li>
+  <li>filtrer par plage horaire (1h, 1 jour, 1 semaine, etc.)</li>
+  <li>déclencher des exports vers Excel.</li>
+</ul>
+</li>
+<li> Les données archivées peuvent être récupérées automatiquement dans Excel</li>
+<img src="functionemnet du projet.jpg" width="400" height="200" alt="Foto de Mário Lourenço">
+</ol><br>
+
+      <li>  Controle de temperatura na sala de Levedura na ECN</li>
+      </ol>
+      
+    </div>
+
+  </div>
+
+  <footer>
+    <h2>Contacts</h2>
+    <div class="social">
+      <a href="mailto:mariolourenco826@gmail.com" target="_blank">
+        <img src="gmail (2).png" alt="Gmail">
+      </a>
+      <a href="https://www.instagram.com/mario_lourenco02?igsh=b3RoM2Z4YThkZWdn" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/924895886" target="_blank">
+         <img src="whats.jpg" alt="WhatsApp">
+      </a>
+      <a href="https://www.linkedin.com/in/mário-lourenço" target="_blank">
+        <img src="Linkedln.png" alt="LinkedIn">
+      </a>
+    </div>
+    <p1>&copy; 2025 Mário Lourenço - Tous droits réservés.</p1>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    window.addEventListener("click", function(event) {
+      const menu = document.getElementById("menu");
+      const button = document.querySelector(".menu-button");
+      if (!menu.contains(event.target) && !button.contains(event.target)) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+
