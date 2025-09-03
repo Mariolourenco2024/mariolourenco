@@ -16,6 +16,44 @@
       background-position: center;
     }
 
+
+.container h2{
+       text-align: center;
+      color: #2980b9;
+    }
+    .programação img {
+       width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5%;
+      border: 2px solid #b9bdc0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center; /* centraliza na horizontal */
+      gap: 0.5px; /* espaço entre imagens */
+      /*flex-wrap: nowrap; /* não deixa quebrar para baixo */
+      overflow-x: none; /* adiciona scroll horizontal se não couber */
+      padding: 20px;
+    }
+
+    figure {
+      text-align: center;
+    }
+
+    figure figcaption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+
+
+    
     .menu-container {
       background-color: #2c3e50;
       padding: 10px 20px;
@@ -205,18 +243,53 @@
     </div>
   </div>
 <!-- Conteúdo -->
-  <div class="container">
+ <div class="container">
     <h2>Competências Técnicas</h2>
-    <ul>
-      <li>Programação: C, python, JavaScript, HTML/CSS,Ladder,SCL</li>
-       <li>Programação embarcada com CCS C Compiler (PIC)</li>
-      <li>Criação de websites</li>
+    <ul class="programação">
+      <li>Programação: Langage des automates(Ladder et SCL) et Langages de programation comme:<br>
+       
+         <section class="galeria">
+    <figure>
+      <img src="linguagem c.png" alt="Linguagem C">
+      <figcaption>Langage C</figcaption>
+    </figure>
+    <figure>
+      <img src="linguagem python.jpeg" alt="Python">
+      <figcaption>langage Python</figcaption>
+    </figure>
+    <figure>
+      <img src="lingua javascript.png" alt="JavaScript">
+      <figcaption>JavaScript</figcaption>
+    </figure>
+    <figure>
+      <img src="ling html_css.jpg" alt="HTML CSS">
+      <figcaption>HTML/CSS</figcaption>
+    </figure>
+    <figure>
+      <img src="php.jpg" alt="HTML CSS">
+      <figcaption>PHP</figcaption>
+    </figure>
+  
+  </section>
+
+  </li>
+ 
+      <li>Programação embarcada com CCS C Compiler (PIC) <figure>
+      <img src="ccs c.jpg" alt="HTML CSS">
+      <figcaption>CCS C Compiler</figcaption>
+    </figure></li>
+      <li>Desenvolvimento Web</li>
+         <img src="web dev.jpg" alt="HTML CSS">
+      <figcaption>CCS C Compiler</figcaption>
+    </figure> 
+
      <li>Sistemas Embarcados:Arduino ,Microcontroladores do tipo PIC</li>
       <li>Software:VS code,Wincc, Tia Portal, Matlab/Simulink, pacote office,CCS C compiler,Kicad,Code Blocks,Gantt Projet</li>
       <li>Electrónica:Analise de circuitos, Montagem e soldagem de placas eletrônicas, testes com multimetro/Osciloscopio</li>  
     </ul>
-
-    <h2>Competências Cognitivas</h2>
+    </div>
+<div class="container1">    
+   <h2>Competências Cognitivas</h2>
     <ul>
       <li>Pensamento lógico</li>
         <li>Resolução de problemas</li>
@@ -224,7 +297,9 @@
       <li>Aprendizagem rápida</li>
     
     </ul>
-
+    </div>
+  
+<div class="container2">
      <h2>Competências  Interpessoais</h2>
     <ul>
       <li>Trabalho em equipe</li>
@@ -274,6 +349,7 @@
 
 </body>
 </html>
+
 
 
 
