@@ -9,14 +9,7 @@
       background-position: center;
 
     }
- .CV {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 20px;
-      background: rgb(230, 227, 228);
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(224, 221, 221, 0.1);
-    }
+
 
     /* ===== CABEÇALHO ===== */
     header {
@@ -275,6 +268,7 @@ z-index: -1;
 
 
  
+
 
 
 
