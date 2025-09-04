@@ -24,7 +24,13 @@
       align-items: center;
       flex-wrap: wrap;
     }
-
+.imagem-principal img {
+    max-width:100%; /* nunca passa da largura da Dvi*/
+    heigth:auto;
+    display:block;
+    margin:0 auto; /*Centraliza a imagem */
+ 
+}
     .menu-button {
       background-color: #1f6feb;
       color: white;
@@ -217,8 +223,8 @@ h{
       <p>
 Je suis passionné par la technologie et j’approfondis également mes compétences en développement web.
    </p>
-
-    <img src="m (1).jpg" width="250" height="300" alt="Foto de Mário Lourenço">
+<figure class="imagem-principal"> <img src="m (1).jpg" width="250" height="300" alt="Foto de Mário Lourenço"> </figure>
+  
 
     <p>
 Pendant l’été (juillet et août), j’ai eu l’opportunité de développer des projets au sein de différentes entreprises du Groupe Castel Angola.
@@ -274,6 +280,7 @@ Pendant l’été (juillet et août), j’ai eu l’opportunité de développer 
 
 </body>
 </html>
+
 
 
 
