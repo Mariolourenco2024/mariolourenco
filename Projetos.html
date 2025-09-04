@@ -29,6 +29,23 @@
   z-index: 1;
 }
 
+   .imagem-principal img {
+ display: block;
+     width: 400px;
+      height: 200px;
+       flex-wrap: wrap;
+}
+    figure {
+      text-align: center;
+    }
+
+    figure figcaption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #e6edf3;
+      font-weight: bold;
+    }
+    
     .menu-button {
       background-color: #1f6feb;
       color: white;
@@ -254,17 +271,22 @@
 
  
 <div class="container"> 
-      <h2> Projetos Realizados </h2>
+      <h2> Projects Realisés </h2>
       <ol>
       <li>Gestion et Supervision de CO2 </li>
       <p>Entreprise:Companhia castel de bebidas de Luanda(CCBL)</p>
       <p>Contexte du projet:</p>
-      <p>Ce projet a pour objectif principal la gestion des quantités de CO2 consommées
+      <p class="imagem-principal">
+       Ce projet a pour objectif principal la gestion des quantités de CO2 consommées
  au sein de l’entreprise, ainsi que le stockage des données de consommation dans
  une base de données.
  Il comprend également la mise en place d’un système de supervision permettant
  aux opérateurs de suivre et de gérer la consommation de manière plus précise et
- efficace.</p>
+ efficace.
+     <figure>  <img src="ecran principal.jpg" alt="Logo Castel Angola">
+      <figcaption>Écran Principal</figcaption>
+     </figure>
+      </p>
      
 
 
@@ -312,6 +334,7 @@
 
 </body>
 </html>
+
 
 
 
