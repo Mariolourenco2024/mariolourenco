@@ -49,8 +49,8 @@
     }
 
     /* ===== MENU ===== */
-    nav {
-      background-color:  #f40707;
+   nav {
+      background-color: #07233f;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -58,9 +58,11 @@
 
     nav a {
       color: white;
+      font-size: 19px;
       padding: 14px 20px;
       text-decoration: none;
       font-weight: bold;
+      
     }
 
     nav a:hover {
@@ -407,6 +409,7 @@ z-index: -1;
 
 
  
+
 
 
 
