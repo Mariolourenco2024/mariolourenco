@@ -9,19 +9,33 @@
       background-position: center;
 
     }
-
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cobre toda a div */
+  z-index: -1;       /* fica por trás */
+  opacity: 0.6;      /* transparência para ver melhor o conteúdo */
+}
 
     /* ===== CABEÇALHO ===== */
     header {
       background-color: rgb(22, 6, 1);
       color: rgb(253, 245, 245);
       text-align: center;
-      padding: 40px 20px;
       background-image: url("fot1\ \(4\).jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      
+       position: relative;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
     }
 
     header h1 {
@@ -411,6 +425,7 @@ z-index: -1;
 
 
  
+
 
 
 
