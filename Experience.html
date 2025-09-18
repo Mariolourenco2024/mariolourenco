@@ -45,7 +45,7 @@
       border-radius: 5px;
     }
 
-  .menu-options {
+  /*.menu-options {
       display: none;
       position: absolute;
       top: 60px;
@@ -66,7 +66,48 @@
     .menu-options a:hover {
       background-color: #264f87;
     }
+*/
+       /* ====== MENU FULLSCREEN ====== */
+    .menu-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(8, 20, 46, 0.95);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+      z-index: 1500;
+    }
 
+    .menu-options.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .menu-options a {
+      color: white;
+      font-size: 28px;
+      margin: 15px 0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .menu-options a:hover {
+      color: #facc15;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
     .logo {
       display: flex;
       align-items: center;
@@ -226,7 +267,7 @@
     </div>
 
    <div class="menu-options" id="menu">
-  
+   <span class="close-btn" onclick="toggleMenu()">&times;</span>
     <a href="index.html">Page d'accueil</a>
       <a href="Sobre_min.html">À Propos de Moi</a>
       <a href="Formação.html">Formation</a>
@@ -294,6 +335,7 @@
 
 </body>
 </html>
+
 
 
 
