@@ -12,6 +12,7 @@
 </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contacto.css">
   <!-- SEO -->
   <title>Mário Lourenço - Étudiant en Électronique et systèmes embarqués</title>
 <meta name="description" content="Site officiel de Mário Lourenço. Étudiant en Électronique et systèmes embarqués . Portfolio, projets et contact.">
@@ -144,7 +145,23 @@
 
     </div>
   </section>
-    
+
+      
+  <section class="contact-container">
+    <h2>📩 Envie-me uma mensagem</h2>
+    <form action="https://formspree.io/f/teu-endereco" method="POST">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 <footer>
       <div class="social">
       <a href="mailto:mariolourenco826@gmail.com" target="_blank">
@@ -170,6 +187,7 @@
 
 </body>
 </html>
+
 
 
 
