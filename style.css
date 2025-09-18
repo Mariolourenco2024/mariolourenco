@@ -409,17 +409,30 @@ z-index: -1;
   gap: 2rem;
 }
 
-.card {
-  background: #f3f3f3/* #1a1a1a*/;
-  padding: 2rem;
+/*.card {
+  background: #f3f3f3;/* #1a1a1a*/
+ /* padding: 2rem;
   border-radius: 10px;
   transition: 0.3s;
+}*/
+
+/*.card:hover {
+  transform: translateY(-5px);
+  background: #f3f3f3;
+}*/
+.card {
+  background: #f3f3f3;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  background: #f3f3f3;
+  background: #ffffff; /* ligeiramente mais claro */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 
 
@@ -428,6 +441,7 @@ z-index: -1;
 
 
  
+
 
 
 
