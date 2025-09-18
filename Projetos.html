@@ -73,36 +73,60 @@
       font-weight: bold;
     }
     
-    /.menu-button {
-      background-color: #1f6feb;
-      color: white;
-      padding: 10px 15px;
+    /* Botão menu */
+    .menu-button {
+      background: none;
       border: none;
+      font-size: 24px;
+      color: white;
       cursor: pointer;
-      font-size: 16px;
-      border-radius: 5px;
+      z-index: 2000;
     }
 
-    .menu-options {
-      display: none;
-      position: absolute;
-      top: 60px;
-      left: 20px;
-      background-color: #1f6feb;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      z-index: 1000;
+    /* Menu overlay fullscreen */
+    .menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.95);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+      z-index: 1500;
     }
 
-    .menu-options a {
-      display: block;
-      padding: 10px 15px;
-      color: #ecf0f1;
+    .menu-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Links do menu */
+    .menu-overlay a {
+      color: white;
+      font-size: 28px;
+      margin: 15px 0;
       text-decoration: none;
+      transition: color 0.3s;
     }
 
-    .menu-options a:hover {
-      background-color: #264f87;
+    .menu-overlay a:hover {
+      color: #facc15;
+    }
+
+    /* Botão fechar */
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
     }
 
    
@@ -280,7 +304,9 @@
        <p>Electrical and Embedded System Engineer</p>
       </div>
     </div>
-    <div class="menu-options" id="menu">
+   <!-- Overlay fullscreen -->
+  <div id="menu" class="menu-overlay">
+    <span class="close-btn" onclick="toggleMenu()">&times;</span>
       <a href="index.html">Page d'accueil</a>
       <a href="Sobre_min.html">À Propos de Moi</a>
       <a href="Formação.html">Formation</a>
@@ -397,9 +423,8 @@ supervision/contrôle, communication sans fil, gestion de projet.</p>
   </footer>
 
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+     function toggleMenu() {
+      document.getElementById("menu").classList.toggle("open");
     }
 
     window.addEventListener("click", function(event) {
@@ -413,6 +438,7 @@ supervision/contrôle, communication sans fil, gestion de projet.</p>
 
 </body>
 </html>
+
 
 
 
