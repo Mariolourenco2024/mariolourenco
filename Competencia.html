@@ -71,35 +71,73 @@
     }
 
       .menu-button {
-      background-color: #1f6feb;
+     /* background-color: #none;
       color: white;
       padding: 10px 15px;
       border: none;
       cursor: pointer;
       font-size: 16px;
-      border-radius: 5px;
+      border-radius: 5px;*/
+     background: none;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      z-index: 2000;
     }
 
-    .menu-options {
-      display: none;
+    .menu-overlay {
+      /*display: none;
       position: absolute;
       top: 60px;
       left: 20px;
       background-color:#1f6feb;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
-      z-index: 1000;
+      z-index: 1000;*/
+        position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.95);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+      z-index: 1500;
     }
-
-    .menu-options a {
-      display: block;
+.menu-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .menu-overlay a {
+     /* display: block;
       padding: 10px 15px;
       color:#ecf0f1;
+      text-decoration: none;*/
+         color: white;
+      font-size: 28px;
+      margin: 15px 0;
       text-decoration: none;
+      transition: color 0.3s;
     }
 
     .menu-options a:hover {
-      background-color: #264f87;
+     /* background-color: #264f87;*/
+         color: #facc15;
+    }
+        /* Botão fechar */
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
     }
 
     .logo {
@@ -249,7 +287,6 @@
     O teu navegador não suporta vídeos.
   </video>
    
- <link rel="stylesheet" href="menu.css">
     <!-- Botão menu -->
     <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
 
@@ -268,7 +305,7 @@
   <!-- Overlay fullscreen -->
   <div id="menu" class="menu-overlay">
     <span class="close-btn" onclick="toggleMenu()">&times;</span>
-    <a href="index.html">Page d'accueil</a>
+      <a href="index.html">Page d'accueil</a>
       <a href="Sobre_min.html">À Propos de Moi</a>
       <a href="Formação.html">Formation</a>
       <a href="Projetos.html">Projets Realisés</a>
@@ -364,9 +401,13 @@
   </footer>
 
   <script>
-    function toggleMenu() {
+   /* function toggleMenu() {
       const menu = document.getElementById("menu");
       menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }*/
+      
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("open");
     }
 
     window.addEventListener("click", function(event) {
@@ -380,6 +421,7 @@
 
 </body>
 </html>
+
 
 
 
