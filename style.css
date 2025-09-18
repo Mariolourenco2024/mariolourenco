@@ -393,11 +393,7 @@ z-index: -1;
   text-align: center;
 }
 
-.projects h2 {
- 
-  color: #060606;
- 
-}
+
 .projects h2 {
   font-size: 2rem;
   color: #1e90ff;
@@ -422,7 +418,7 @@ z-index: -1;
 
 .card:hover {
   transform: translateY(-5px);
-  background: #222;
+  background: #94abc5;
 }
 
 
@@ -432,6 +428,7 @@ z-index: -1;
 
 
  
+
 
 
 
