@@ -13,18 +13,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contacto.css">
+    
   <!-- SEO -->
-  <title>Mário Lourenço - Étudiant en Électronique et systèmes embarqués</title>
+  <title>Mário Lourenço,étudiant en Électronique et systèmes embarqués</title>
 <meta name="description" content="Site officiel de Mário Lourenço. Étudiant en Électronique et systèmes embarqués . Portfolio, projets et contact.">
   <meta name="keywords" content="Mário Lourenço, Génie Électrique, Systèmes Embarqués, Électronique, Programmation, Portfolio">
   <meta name="author" content="Mário Lourenço">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page principal-Mário Lourenço</title>
-    
-
-
+  <title>Page principal_Mário Lourenço</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  
   <style>
    footer {
       background-color: #2c3e50;
@@ -74,6 +75,7 @@
       }
       
     }
+
     </style>
 </head>
 <body>
@@ -89,8 +91,8 @@
   <img src="lourenco1 (2)2.jpg" alt="Logo Mário Lourenço">
 </a>
       <div class="logo-text">
-        <h1>Mário Lourenço</h1>
-        <p>Electrical and Embedded System Engineer</p>
+        <h1>Electronic and Embedded Systems Engineer</h1>
+        <p></p>
       </div>
     </div>
     <link rel="stylesheet" href="style.css">
@@ -103,30 +105,35 @@
      <a href="Competencia.html">Compétences</a>
       <a href="Projetos.html">Projets Realisés</a>
      <a href="Experience.html">Expérience Profissionnelle</a>
+     <a href="#galerie">Galerie de mes réalisations</a>
+
   </nav>
+  
   <div >
+  
+    
  <!--   <a href="CV Lourenco Mario But3 (1).pdf" download="Mario_Lourenco_CV.pdf" 
    style="display:inline-block; padding:10px 20px; background:#007bff; color:#fff; text-decoration:none; border-radius:8px;">
    📥 Download do CV </a>-->
      <!-- <a href="CV Lourenco Mario But3 (1).pdf" target="_blank"   style="display:inline-block; padding:10px 20px; 
         background:#007bff; color:#fff; text-decoration:none; border-radius:0px;" >👀 Voir mon CV</a>
   </div>-->
-  
+ 
   <!-- ===== CONTEÚDO ===== -->
-   <!-- SECTION HERO -->
   <section class="hero">
     <div class="hero-text">
       <h1>Bienvenue sur mon site personnel !</h1>
       <p>Découvrez mes projets, mes compétences et mon parcours en électronique et systèmes embarqués.</p>
       <div class="hero-buttons">
         <a href="CV Lourenco Mario But3 (1).pdf" class="btn-primary">📄 Voir mon CV</a>
-        <a href="tel:+33785308599" class="btn-secondary">📞 Contactez-moi</a>
+        <a href="#contact" class="btn-secondary">Contactez-moi</a>
+
       </div>
     </div>
   </section>
-
+ 
      <!-- SECTION PROJETS -->
-  <section id="projects" class="projects">
+ <!-- <section id="projects" class="projects">
     <h2>Projets à l’Honneur</h2>
     <div class="project-grid">
 
@@ -149,9 +156,111 @@
 
     </div>
   </section>
+-->
 
+<section class="projects-header text-center">
+  <!-- Vídeo de fundo -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="video.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la lecture de vidéo.
+  </video>
+
+  <!-- Conteúdo acima do vídeo -->
+  <div class="overlay">
+    <div class="container">
+      <h2> !! Projets à l’Honneur !!</h2>
+    </div>
+
+    <!-- seta animada -->
+    <div class="scroll-down">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <!-- Indicadores -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active slide1">
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1>Système de Supervision du CO₂</h1>
+          <p class="opacity-75">
+            Gestion des quantités de CO₂ consommées, stockage des données et supervision via PLC Siemens S7-300 et HMI Siemens...
+          </p>
+          <p><a class="btn btn-lg btn-primary" href="Projetos.html">Voir plus</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item slide2">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Contrôle de Température</h1>
+          <p>Projet avec TIA Portal pour contrôle automatique de température dans une salle de levure, utilisant PT100 et HMI Siemens...</p>
+          <p><a class="btn btn-lg btn-primary" href="Projetos.html">En savoir plus</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Slide 3 -->
+    <div class="carousel-item slide3">
+      <div class="container">
+       <div class="carousel-caption text-center">
+          <h1>Site Web Personnel</h1>
+          <p>Création de ce site comme portfolio en ligne pour présenter mes travaux et compétences.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botões -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Précédent</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Suivant</span>
+  </button>
+</div>
+
+<section id="galerie" class="gallery-pinterest">
+  <h2>✨Galerie de mes réalisations✨</h2>
+  <div class="masonry">
+    <img src="2.jpg" alt="" class="reveal">
+    <img src="3.jpg" alt="" class="reveal">
+    <img src="4.jpg" alt="" class="reveal">
+    <img src="7.jpg" alt="" class="reveal">
+    <img src="8.jpg".jpg" alt="" class="reveal">
+    <img src="9.jpg" alt="" class="reveal">
+    <img src="10.jpg" alt="" class="reveal">
+    <img src="11.jpg" alt="" class="reveal">
+    <img src="12.jpg" alt="" class="reveal">
+  </div>
+</section>
+
+
+
+<!--Fomrulario-->
       
-<section class="contact-container">
+<section id="contact" class="contact-container">
   <h2>📩 Envoyez-moi un message</h2>
   <form id="contact-form" action="https://formspree.io/f/xnnbenqp" method="POST">
     <label for="name">Nom</label>
@@ -169,6 +278,26 @@
   <!-- Notificação -->
   <p id="form-status" style="margin-top:15px; font-weight:bold;"></p>
 </section>
+
+
+
+<script>
+  function reveal() {
+    let reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+  window.addEventListener("load", reveal); // também ativa ao carregar a página
+</script>
 
 <script>
   const form = document.getElementById("contact-form");
@@ -200,6 +329,8 @@
   });
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 <footer>
       <div class="social">
       <a href="mailto:mariolourenco826@gmail.com" target="_blank">
@@ -208,9 +339,7 @@
       <a href="https://www.instagram.com/mario_lourenco02?igsh=b3RoM2Z4YThkZWdn" target="_blank">
         <img src="instagram.png" alt="Instagram">
       </a>
-      <a href="https://wa.me/924895886" target="_blank">
-        <img src="whats.jpg" alt="WhatsApp">
-      </a>
+      
       <a href="https://www.linkedin.com/in/mário-lourenço" target="_blank">
         <img src="Linkedln.png" alt="LinkedIn">
       </a>
