@@ -589,7 +589,7 @@ z-index: -1;
 
 /* muda cor do parágrafo (p) no carousel */
 .carousel-caption p {
-  color: #000000;   /* branco */
+  color:white;   /* branco */
   font-size: 25px;
    font-weight: bold;
  /* text-shadow: 1px 1px 6px rgba(0,0,0,0.7);*/
@@ -781,6 +781,7 @@ z-index: -1;
 @media (max-width: 600px) {
   .masonry { column-count: 1; }
 }
+
 
 
 
