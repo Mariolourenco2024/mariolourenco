@@ -223,6 +223,44 @@
   z-index: -1;       /* fica por trás */
   opacity: 0.6;      /* transparência para ver melhor o conteúdo */
 }
+.experience {
+  padding: 40px 20px;
+  background-color: #07233f;
+  font-family: Arial, sans-serif;
+}
+
+.experience h2 {
+  text-align: center;
+  color: yellow;
+  margin-bottom: 30px;
+}
+
+.experience-item {
+  background-color: #07233f;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.experience h3 {
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.experience-details li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.lin{
+  color: #facc15;
+}
+
 
   </style>
 </head>
@@ -242,7 +280,7 @@
 
       <div class="logo-text">
         <h1>Mário Lourenço</h1>
-       <p>Electrical and Embedded Systems Technician</p>
+       <p>Electrical and Embedded System Engineer</p>
       </div>
     </div>
 
@@ -258,24 +296,41 @@
   </div>
         </div>
 <!-- Conteúdo Principal -->
-  <div class="container">
-<h2>Expériences Profissionelle </h2>
+
+
+<section class="experience">
+  <h2>Expérience Professionnelle</h2>
+  
+  <div>
+    <h3>Stagiaire en automatisme – Groupe Castel 14/04/2025-17/08/2025</h3>
+    <p class="project-title"><strong>Projet :</strong> Supervision du CO₂ dans l’usine de production de boissons gazeuses</p>
+    
+    <ul class="experience-details">
+      <li><strong>Conception et mise en place du système :</strong> Développement de l’architecture de communication entre l’automate <strong>Siemens S7-315</strong>, les capteurs de débit et l’IHM <strong>IPC677D</strong>.</li>
+      <li><strong>Acquisition et traitement des données :</strong> Intégration de débitmètres et stockage des données de consommation dans une <strong>base de données</strong>.</li>
+      <li><strong>Supervision et exploitation :</strong> Création d’écrans dynamiques sur l’IHM pour le suivi en <strong>temps réel</strong>, configuration des paramètres et exportation automatique vers <strong>Excel</strong>.</li>
+      <li><strong>Objectif du projet :</strong> Optimiser l’utilisation du <strong>CO₂</strong>, indispensable au processus de fabrication, tout en réduisant son <strong>impact environnemental</strong>.</li>
+      <li><strong>Compétences développées :</strong> Élaboration de <strong>schémas électriques</strong>, <strong>automatisme industriel</strong>, <strong>supervision HMI/SCADA</strong>, esprit critique et adaptabilité.</li>
+    </ul>
+  </div>
+</section>
+
+<br>
+  <div class="experience">
+<h2></h2>
 
 <p>
   Au cours de mes expériences pratiques, j’ai eu l’opportunité de participer à des projets au sein d’entreprises du groupe :
+      <a href="https://grupocastelangola.com" target="_blank" class="lin">Groupe Castel Angola</a>
 </p>
 
-
-    <h4>
-      <a href="https://grupocastelangola.com" target="_blank">Groupe Castel Angola</a>
-    </h4>
 
     <div class="imagem">
       <img src="CASTEL_ANGOLA-Logo-01-808x800.png" alt="Logo Castel Angola">
     </div>
 
     <p><strong>Filiales:</strong></p>
-    <ol>
+    <ol class="experience-details">
       <li>Soba Catumbela.</li>
       <li>Companhia Castel de Bebidas de Luanda (CCBL).</li>
       <li>Companhia Castel de Bebidas do Sul de Angola (CCBSA) + Empresas de Cerveja N'Gola (ECN).</li>
@@ -314,7 +369,6 @@
 
 </body>
 </html>
-
 
 
 
