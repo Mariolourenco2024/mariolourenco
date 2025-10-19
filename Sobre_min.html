@@ -193,30 +193,43 @@
       transform: scale(1.2);
     }
     
-    .imagem-principal {
-  display: flex;          /* Ativa o flexbox */
-  align-items: flex-start; /* Alinha o conteúdo no topo */
-  gap: 20px;              /* Espaço entre a imagem e o texto */
+   .imagem-principal {
+  display: flex;            /* Ativa flexbox */
+  flex-wrap: wrap;          /* Permite quebrar linha em telas pequenas */
+  align-items: flex-start;  /* Alinha topo da imagem com o texto */
+  gap: 20px;                /* Espaço entre imagem e texto */
+  padding: 10px 0;
 }
 
 .imagem-principal figure {
-  margin: 0;              /* Remove margens padrão do figure */
+  margin: 0;
+  flex: 0 0 300px;          /* Imagem ocupa no máximo 300px */
 }
 
 .imagem-principal img {
-   width: 350px;
-      height: 450px;
-      margin-left:1%;
-      object-fit: cover;
-      border-radius: 5%;
-      border: 2px solid #b9bdc0;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
+  width: 100%;              /* Ajusta ao tamanho do figure */
+  height: auto;
+  display: block;
+  border-radius: 10px;      /* Opcional: borda arredondada */
 }
 
-.imagem-principal .texto {
-  flex: 1;                /* Faz o texto ocupar o espaço restante */
+.imagem-principal p {
+  flex: 1;                  /* Texto ocupa o restante do espaço */
+  min-width: 200px;         /* Evita que fique muito estreito em telas pequenas */
+  line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .imagem-principal {
+    flex-direction: column; /* Em telas pequenas, imagem em cima, texto embaixo */
+  }
+
+  .imagem-principal figure,
+  .imagem-principal p {
+    flex: 1 1 100%;
+  }
+}
+
 .Lois{
   color: yellow;
   font-size: 25px;
@@ -325,6 +338,7 @@
 
 </body>
 </html>
+
 
 
 
