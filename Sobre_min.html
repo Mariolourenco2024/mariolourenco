@@ -13,6 +13,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>À Propos de moi (Mario Lourenço)</title>
+   <link rel="stylesheet" href="Traducao.css">
   <style>
     body {
       margin: 0;
@@ -139,23 +140,28 @@
       margin: 0;
       font-size: 13px;
       color: #ffff;
+      
     }
 
     .container {
-      max-width: 1000px;
+      
+  padding: 40px 20px;
+  background-color: #07233f;
+  font-family: Arial, sans-serif;
+}
+    /*  max-width: 1000px;
       margin: 30px auto;
       padding: 20px;
       background: #07233f;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(224, 221, 221, 0.1);
-    }
+    }*/
 
     li, p {
       color:white;
       font-size: 18px;
     }
 
-  
     h2 {
       color: yellow;
        text-align: center;
@@ -164,7 +170,6 @@
        color: yellow;
        font-size: 28px;
     }
-
 
     footer {
       background-color:  #07233f;
@@ -187,7 +192,8 @@
     .social img:hover {
       transform: scale(1.2);
     }
-     .imagem-principal {
+    
+    .imagem-principal {
   display: flex;          /* Ativa o flexbox */
   align-items: flex-start; /* Alinha o conteúdo no topo */
   gap: 20px;              /* Espaço entre a imagem e o texto */
@@ -235,7 +241,7 @@
       </a>
       <div class="logo-text">
         <h1>Mário Lourenço</h1>
-        <p>Electrical and Embedded Systems Technician</p>
+        <p>Electrical and Embedded System Engineer</p>
       </div>
     </div>
   </div>
@@ -249,9 +255,20 @@
     <a href="Projetos.html">Projets Réalisés</a>
     <a href="Experience.html">Expérience Professionnelle</a>
   </div>
+<div class="language-menu">
+  <button class="lang-btn">🌍 FR ▾</button>
+  <div class="lang-options">
+    <a href="Sobre_min.html">🇫🇷 French</a>
+    <a href="pt_sobre mim.html">🇵🇹 Portuguese</a>
+    <a href="en_sobre mim.html">🇬🇧 English</a>
+  </div>
+</div>
+<br>
 
   <div class="container">
     <h2>À Propos de Moi</h2>
+    
+
     <section class="imagem-principal">
       <figure>
  <img src="4.jpg" alt="Foto de Mário Lourenço">
@@ -270,8 +287,11 @@
   3. Jouer aux jeux vidéo <br>
 
   </p>
+
+
    
     </section>
+
   </div>
 
   <footer>
@@ -285,6 +305,25 @@
     <p1> Copyright &copy; 2025 Mário Lourenço - Tous droits réservés.</p1>
   </footer>
 
+<script>
+  const langBtn = document.querySelector('.lang-btn');
+  const langMenu = document.querySelector('.lang-options');
+
+  // Toggle dropdown when clicking the button
+  langBtn.addEventListener('click', () => {
+    langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Close menu if clicked outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.language-menu')) {
+      langMenu.style.display = 'none';
+    }
+  });
+</script>
+
+
+
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("open");
@@ -293,9 +332,6 @@
 
 </body>
 </html>
-
-
-
 
 
 
