@@ -733,17 +733,6 @@ z-index: -1;
 }
 
 
-.gallery-pinterest {
-  padding: 50px 20px;
-  text-align: center;
-  background: #07233f;
-}
-
-.gallery-pinterest h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: yellow;
-}
 
 .masonry {
   column-count: 3;
@@ -781,6 +770,7 @@ z-index: -1;
 @media (max-width: 600px) {
   .masonry { column-count: 1; }
 }
+
 
 
 
