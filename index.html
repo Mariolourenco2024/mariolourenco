@@ -112,7 +112,109 @@ border-radius: 100%;
 .my7 p{
   text-align: center ;
 }
+.mesp {
+       width: 100%;          /* Ocupa toda a largura da tela */
+  margin: 0;            /* Remove margens automáticas */
+  padding: 20px;        /* Espaçamento interno */
+  background-color: black; /* Fundo preto */
+    }
+.ativite{
+  width: 100%;          /* Ocupa toda a largura da tela */
+  margin: 0;            /* Remove margens automáticas */
+  padding: 20px;        /* Espaçamento interno */
+  background-color: #07233f;
+  text-align: center;
+    }
 
+    .formulario{
+  width: 100%;          /* Ocupa toda a largura da tela */
+  margin: 0;            /* Remove margens automáticas */
+  padding: 20px;        /* Espaçamento interno */
+  background-color: #07233f;
+  
+    }
+
+    .gallery-pinterest {
+  padding: 50px 20px;
+  text-align: center;
+  background: #07233f;
+}
+
+.gallery-pinterest h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: whitesmoke;
+}
+
+.section-simulation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 5%;
+      flex-wrap: wrap;
+    }
+
+    .text-zone {
+      flex: 1;
+      max-width: 45%;
+    }
+     .text-zone h1 {
+   color:#ffcc00; 
+     font-weight: bold;
+    }
+
+
+    .text-zone h2 {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    .text-zone p {
+      margin-top: 20px;
+      line-height: 1.6;
+      color: white;
+    }
+
+    .btn-green {
+      background-color: #76b900;
+      color: black;
+      border: none;
+      margin-top: 20px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .carousel {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    .carousel img {
+      border-radius: 8px;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 992px) {
+      .section-simulation {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-zone, .carousel {
+        max-width: 100%;
+      }
+    }
+.linha{
+ border: none;              /* remove a borda padrão */
+  border-top: 5px solid yellow; 
+  width: 70%;               
+  margin: 20px auto;       
+  
+}
     </style>
 </head>
 <body>
@@ -202,35 +304,215 @@ border-radius: 100%;
     Votre navigateur ne supporte pas la lecture de vidéo.
   </video>
 
-  <!-- Conteúdo acima do vídeo -->
+ <!-- Conteúdo acima do vídeo -->
   <div class="overlay">
     <div class="container">
-      <h2>Projets à l’honneur</h2>
+      <h2> Projets à l’Honneur </h2>
     </div>
 
     <!-- seta animada -->
     <div class="scroll-down">
       <span></span>
-      <span></span>
-      <span></span>
+
     </div>
   </div>
 </section>
 
+
+<section class="mesp">
+  
+<section class="section-simulation">
+    <div class="text-zone">
+      <h1>Système de Supervision du CO₂</h1>
+      <p> <strong>Gestion des quantités de CO₂ consommées, stockage des données et supervision via PLC Siemens S7-300 et HMI Siemens...</strong> </p>
+
+    <p><a class="btn btn-lg btn-primary" href="Projetos.html">Voir plus</a></p>
+    </div>
+
+   <div id="carouselSimulation1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="ecran principal.jpg" class="d-block w-100" alt="Usine 1">
+        </div>
+        <div class="carousel-item">
+          <img src="9.jpg" class="d-block w-100" alt="Usine 2">
+        </div>
+        <div class="carousel-item">
+          <img src="co.jpg" class="d-block w-100" alt="Usine 3">
+        </div>
+        <div class="carousel-item">
+          <img src="my7.jpg" class="d-block w-100" alt="Usine 4">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSimulation1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSimulation1" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+
+
+<hr class="linha"> 
+
+
+<section class="section-simulation">
+    <div class="text-zone">
+      <h1>Contrôle et supervision à distance sans fils d’un robot terrestre</h1>
+      <p> <strong>Conception et réalisation d’un robot mobile autonome et pilotable à distance, capable d’éviter les obstacles, suivre un cap et transmettre des données en temps réel....</strong><p>
+
+    <p><a class="btn btn-lg btn-primary" href="Projetos.html#co2">Voir plus</a></p>
+    </div>
+
+   <div id="carouselSimulation2" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="3.jpg" class="d-block w-100" alt="Usine 1">
+        </div>
+        <div class="carousel-item">
+          <img src="ma.jpg" class="d-block w-100" alt="Usine 2">
+        </div>
+        <div class="carousel-item">
+          <img src="robot.jpg" class="d-block w-100" alt="Usine 3">
+        </div>
+        <div class="carousel-item">
+          <img src="my7.jpg" class="d-block w-100" alt="Usine 4">
+        </div>
+      </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselSimulation2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSimulation2" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+</section>
+
+
+
+
+  <!-- Conteúdo acima do vídeo -->
+  <div class="overlay">
+    <div class="ativite">
+      <h2> Mes activités extrascolaires </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="mesp">
+  
+<section class="section-simulation">
+    <div class="text-zone">
+      <h1>Mini Hackathon – 1ère édition au Luxembourg</h1>
+      <p> J’ai participé au Mini Hackathon – 1ère édition au Luxembourg en équipe de 4. Nous avons réussi à terminer 2ᵉ place du concours. </p>
+        <p>
+        Pendant cet événement intense, nous avons travaillé en collaboration pour analyser des défis, concevoir et coder nos solutions, tester nos idées rapidement et les déployer dans le temps imparti. Grâce à notre organisation, notre créativité et notre esprit d’équipe,  mettant en avant nos compétences en programmation, résolution de problèmes et gestion de projet.</p>
+
+    </div>
+
+   <div id="carouselSimulation3" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="odo1.jpg" class="d-block w-100" alt="Usine 1">
+        </div>
+        <div class="carousel-item">
+          <img src="odo3.jpg" class="d-block w-100" alt="Usine 2">
+        </div>
+        <div class="carousel-item">
+          <img src="odo4.jpg" class="d-block w-100" alt="Usine 3">
+        </div>
+        <div class="carousel-item">
+          <img src="odo2.jpg" class="d-block w-100" alt="Usine 4">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSimulation3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselSimulation3" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+
+
+
+<hr class="linha"> 
+
+
+<section class="section-simulation">
+  
+
+   <div id="carouselSimulation4" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="ca7.jpg" class="d-block w-100" alt="Usine 1">
+        </div>
+        <div class="carousel-item">
+          <img src="ca3.jpg" class="d-block w-100" alt="Usine 2">
+        </div>
+        <div class="carousel-item">
+          <img src="ca5.jpg" class="d-block w-100" alt="Usine 3">
+        </div>
+        <div class="carousel-item">
+          <img src="ca10.jpg" class="d-block w-100" alt="Usine 4">
+        </div>
+         <div class="carousel-item">
+          <img src="ca4.jpg" class="d-block w-100" alt="Usine 5">
+        </div>
+         <div class="carousel-item">
+          <img src="ca6.jpg" class="d-block w-100" alt="Usine 6">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSimulation4" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSimulation4" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+      <div class="text-zone">
+      <h1>Festival de Robotique de Cachan, Paris </h1>
+      <p>Participation à une compétition de robotique à Cachan, Paris (2024). Durant cet événement, 
+          j’ai travaillé au sein d’une équipe pour concevoir, programmer et tester un robot terrestre capable
+          d’effectuer des tâches spécifiques telles que déplacement, détection d’obstacles et suivi d’un parcours prédéfini.
+          Cette expérience m’a permis de renforcer mes compétences en électronique embarquée, programmation de microcontrôleurs,
+          robotique mobile et travail en équipe sous contrainte de temps.  </p>
+        
+    </div>
+  </section>
+
+
+</section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+ 
 <!-- Carousel -->
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-  <!-- Indicadores -->
-  <div class="carousel-indicators">
+<!-- <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">  -->
+ <!-- Indicadores -->
+  <!--  <div class="carousel-indicators">
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
       aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+  </div> -->
 
   <!-- Slides -->
-  <div class="carousel-inner">
+  <!--  <div class="carousel-inner">-->
     <!-- Slide 1 -->
-    <div class="carousel-item active slide1">
+   <!--   <div class="carousel-item active slide1">
       <div class="container">
         <div class="carousel-caption text-start">
           <h1>Système de Supervision du CO₂</h1>
@@ -241,9 +523,9 @@ border-radius: 100%;
         </div>
       </div>
     </div>
-
+-->
     <!-- Slide 2 -->
-    <div class="carousel-item slide2">
+    <!--<div class="carousel-item slide2">
       <div class="container">
         <div class="carousel-caption">
           <h1>Contrôle de Température</h1>
@@ -251,11 +533,11 @@ border-radius: 100%;
           <p><a class="btn btn-lg btn-primary" href="Projetos.html">En savoir plus</a></p>
         </div>
       </div>
-    </div>
+    </div>-->
 
 
     <!-- Slide 3 -->
-    <div class="carousel-item slide3">
+    <!-- <div class="carousel-item slide3">
       <div class="container">
        <div class="carousel-caption text-center">
           <h1>Site Web Personnel</h1>
@@ -263,10 +545,13 @@ border-radius: 100%;
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
+
+
+  
   <!-- Botões -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+ <!--  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Précédent</span>
   </button>
@@ -274,7 +559,9 @@ border-radius: 100%;
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Suivant</span>
   </button>
-</div>
+</div>-->
+
+<br>
 
 <section id="galerie" class="gallery-pinterest">
   <h2>Galerie de mes réalisations</h2>
@@ -283,7 +570,7 @@ border-radius: 100%;
     <img src="3.jpg" alt="" class="reveal">
     <img src="4.jpg" alt="" class="reveal">
     <img src="7.jpg" alt="" class="reveal">
-    <img src="8.jpg".jpg" alt="" class="reveal">
+    <img src="8.jpg" alt="" class="reveal">
     <img src="9.jpg" alt="" class="reveal">
     <img src="10.jpg" alt="" class="reveal">
     <img src="11.jpg" alt="" class="reveal">
@@ -293,7 +580,11 @@ border-radius: 100%;
 
 
 
-<!--Fomrulario-->
+
+<br>
+<section  class="formulario">
+ 
+  <!--Fomrulario-->
       
 <section id="contact" class="contact-container">
   <h2>📩 Envoyez-moi un message</h2>
@@ -312,6 +603,7 @@ border-radius: 100%;
 
   <!-- Notificação -->
   <p id="form-status" style="margin-top:15px; font-weight:bold;"></p>
+</section>
 </section>
 
 
@@ -403,6 +695,7 @@ border-radius: 100%;
 
 </body>
 </html>
+
 
 
 
