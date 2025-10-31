@@ -354,7 +354,8 @@ z-index: -1;
   margin-bottom: 1rem;
 }
 .hero p{
-  color: white;
+  color: wheat;
+  font-size: 25px;
 }
 
 .hero-buttons {
@@ -770,6 +771,7 @@ z-index: -1;
 @media (max-width: 600px) {
   .masonry { column-count: 1; }
 }
+
 
 
 
