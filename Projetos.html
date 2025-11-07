@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
    <!-- Google tag (gtag.js) -->
@@ -283,6 +283,54 @@
   opacity: 0.6;      /* transparência para ver melhor o conteúdo */
 }
 
+.roda{
+  text-decoration: none; 
+  color: white;        
+  padding: 0 10px;     
+}
+.roda:hover {
+  color:yellow;       
+  text-decoration: none;
+}
+
+.programação img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5%;
+      border: 0px solid #b9bdc0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+  .galeria {
+      display: flex;
+      justify-content: center; /* centraliza na horizontal */
+      gap: 0.5px; /* espaço entre imagens */
+      flex-wrap: wrap; /* não deixa quebrar para baixo */
+      overflow-x: none; /* adiciona scroll horizontal se não couber */
+      padding: 20px;
+    }
+
+    figure {
+      text-align: center;
+    }
+
+    figure figcaption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: yellow;
+      font-weight: bold;
+    }
+.ull{
+  font-style: italic;
+}
+.linha{
+ border: none;              /* remove a borda padrão */
+  border-top: 2px solid white; 
+  width: 70%;               
+  margin: 20px auto;       
+  
+}
 
   
   </style>
@@ -321,9 +369,8 @@
 <div class="container"> 
       <h2> Projects Realisés </h2>
       <ol>
-      <li > Projet : Gestion et Supervision de CO2 </li>
-      <p>Entreprise : Compagnie Castel de boissons de Luanda(CCBL)</p>
-      <p>Contexte du projet : </p>
+      <li > <strong>Gestion et Supervision de CO2</strong> </li>
+      <p>Entreprise: Compagnie Castel de boissons de Luanda(CCBL)</p>
       <p>
        Ce projet a pour objectif principal la gestion des quantités de CO2 consommées
  au sein de l’entreprise, ainsi que le stockage des données de consommation dans
@@ -335,9 +382,59 @@
       <img src="ecran principal.jpg" style="max-width:100%; height:auto;">
       <figcaption>Écran Principal</figcaption>
      </figure>
-      </p>
+
+ <ul class="programação">
+      <li> <strong>Composants principaux utilisés dans le projet: </strong><br>
+       <p>Dans le cadre de ce projet, plusieurs composants matériels et logiciels ont été intégrés afin d’assurer le bon fonctionnement du système. Les éléments ci-dessous représentent les principaux composants utilisés :</p>
+         <section class="galeria">
+    <figure >
+      <img src="cont.png" alt="Linguagem C">
+      <figcaption> Flowmeter OPTISWIRL 4200 C</figcaption>
+    </figure>
+    <figure>
+      <img src="Promag_50W_51W_Front_Horiz_Displ_Komp_PG_PP_01.jpg" alt="Python">
+      <figcaption>Proline Promass</figcaption>
+    </figure>
+    <figure>
+      <img src="cpu.png" alt="JavaScript">
+      <figcaption>CPU 315-2 PN/DP</figcaption>
+    </figure>
+    <figure>
+      <img src="ipc.png" alt="HTML CSS">
+      <figcaption>IPC</figcaption>
+    </figure>
     
-      <li>Projet : Contrôle de la température dans la salle de levures à l’Entreprise de bières N'Gola (ECN)</li>
+  
+  </section>
+
+  </li>  
+    </ul>
+        </p>
+    <p><strong>Principe de Fonctionnement du projet</strong></p>
+
+<p>Les capteurs mesurent en continu le débit instantané et le volume totalisé de CO2. Ces valeurs sont lues par l’automate S7-300 via les entrées analogiques (4–20
+ mA).</p>
+
+ <p>L’automate traite les données, les convertit si nécessaire, puis les envoie à
+ l’IHM et IHM affiche ces valeurs sur des écrans conçus sous WinCC.  <br> <br>
+ <strong>Les opérateurs peuvent y:</strong>
+ <ul class="ull">
+  <li>consulter les données en direct</li>
+  <li>visualiser les historiques sous forme de courbes (Trend View)</li>
+  <li>filtrer par plage horaire (1h, 1 jour, 1 semaine, etc.)</li>
+  <li>déclencher des exports vers Excel</li>
+ </ul>
+ 
+ </p>
+ <figure  class="imagem-principal">
+      <img src="functionemnet du projet.jpg" style="max-width:100%; height:auto;">
+      <figcaption>Principe de Functionnement du projet</figcaption>
+     </figure>
+     <br>
+<hr class="linha">
+<br>
+<!--deuxieme projet-->
+      <li> <strong>Contrôle de la température dans la salle de levures à l’Entreprise de bières N'Gola (ECN)</strong></li>
        <p>
         Le projet proposé a consisté en la mise en place d’un système capable de contrôler et 
         de réguler la température de la salle de levures, afin de garantir que l’environnement 
@@ -355,6 +452,40 @@ Ce travail a contribué non seulement à améliorer l’efficacité et la stabil
        </p>
       </ol>
       
+
+ <ul class="programação">
+      <li> <strong>Composants principaux utilisés dans le projet: </strong><br>
+       <p>Dans le cadre de ce projet, plusieurs composants matériels et logiciels ont été intégrés afin d’assurer le bon fonctionnement du système:</p>
+         <section class="galeria">
+    <figure >
+      <img src="danfoos (1).jpg" alt="Linguagem C">
+      <figcaption> Capteur de température</figcaption>
+    </figure>
+    <figure>
+      <img src="ve.png" alt="Python">
+      <figcaption>Ventilateur</figcaption>
+    </figure>
+    <figure>
+      <img src="cpu.png" alt="JavaScript">
+      <figcaption>CPU 315-2 PN/DP</figcaption>
+    </figure>
+    <figure>
+      <img src="ipc.png" alt="HTML CSS">
+      <figcaption>IPC</figcaption>
+    </figure>
+    
+  
+  </section>
+
+  </li>  
+    </ul>
+<p><strong>Connexion et configuration des composants dans le TIA Portal</strong></p>
+<p> Pour la réalisation de ce projet, le logiciel TIA Portal (Totally Integrated Automation Portal), développé par Siemens, a été utilisé. Cet environnement d’ingénierie permet la programmation, la configuration et la simulation des automates programmables industriels (API/PLC), tout en offrant des outils pour l’intégration avec des systèmes de supervision (SCADA).</p>
+ <figure  class="imagem-principal">
+      <img src="com.jpg" style="max-width:100%; height:auto;">
+      <figcaption>Architecture du système</figcaption>
+     </figure>
+
     </div>
 
 <div class="container1"> 
@@ -393,15 +524,8 @@ supervision/contrôle, communication sans fil, gestion de projet.</p>
      
      </ol>
     
-       
-     
-      
     </div>
 
-
-
-
- 
   </div>
 
   <footer>
@@ -437,6 +561,7 @@ supervision/contrôle, communication sans fil, gestion de projet.</p>
 
 </body>
 </html>
+
 
 
 
